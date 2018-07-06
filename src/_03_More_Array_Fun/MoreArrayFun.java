@@ -48,28 +48,25 @@ public class MoreArrayFun {
 	// 4. Write a method that takes an array of Strings and prints every other
 	// String in the array.
 	void pSr(String[] mn) {
-		String[] filler = new String[mn.length];
-		String[] picnikka = new String[(mn.length) - ((int) mn.length / 2)];
-		System.out.println(picnikka.length);
-		for (int i = 0; i < mn.length - 1; i++) {
-			if (i % 2 != 0) {
-				filler[i] = mn[i];
-			}
-		}
-
-		for (int i = 0; i < filler.length; i++) {
-			if (filler[i] != null) {
-				picnikka[i] = filler[i];
+		// String[] filler = new String[mn.length];
+		// String[] picnikka = new String[(mn.length) - ((int) mn.length / 2)];
+		// System.out.println(picnikka.length);
+		// for (int i = 0; i < mn.length - 1; i++) {
+		// if (i % 2 != 0) {
+		// filler[i] = mn[i];
+		// }
+		// }
+		for (int i = 0; i < mn.length; i++) {
+			if (/* (filler[i] != null) && */(i % 2 == 0)) {
+				System.out.println(mn[i]);
 			}
 			// make picnikka set its 0, 1, 2 slots to filler's 1, 3, 5 slots
 		}
 
-		for (
-
-		String sortable : picnikka) {
-			System.out.println(sortable);
-		}
-		System.out.println("------------------------------");
+		/*
+		 * for (String sortable : mn) { System.out.println(sortable); }
+		 * System.out.println("------------------------------");
+		 */
 	}
 
 	// 5. Write a method that takes an array of Strings and prints all the Strings
